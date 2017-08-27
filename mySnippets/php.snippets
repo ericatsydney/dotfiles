@@ -1,0 +1,16 @@
+snippet vd
+	var_dump(${0});
+endsnippet
+snippet vdd
+	var_dump(${1}); 
+	die(${0:});
+endsnippet
+snippet pr
+	print_r(${0});
+endsnippet
+snippet prs
+	print_r(${0}, 1);
+endsnippet
+snippet vdf
+	error_log(print_r($${1:foo}, true), 3, '${2:/tmp/debug.log}');
+endsnippet

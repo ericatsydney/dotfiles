@@ -9,7 +9,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'Shougo/deoplete.nvim' 
 Plug 'SirVer/ultisnips' 
-Plug 'honza/vim-snippets' 
+"Plug 'honza/vim-snippets' 
 " Initialize plugin system
 call plug#end()
 
@@ -252,6 +252,10 @@ let g:ackprg = 'ag --nogroup --nocolor --column'
 let g:deoplete#enable_at_startup = 1
 
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+set runtimepath+=~/.config/nvim/mySnippets
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+let g:UltiSnipsSnippetsDir="~/.config/nvim/mySnippets"
+let g:UltiSnipsSnippetDirectories="~/.config/nvim/mySnippets"
