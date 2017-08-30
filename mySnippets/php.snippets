@@ -1,3 +1,4 @@
+# Debugging.
 snippet vd
 	var_dump(${0});
 endsnippet
@@ -5,12 +6,33 @@ snippet vdd
 	var_dump(${1}); 
 	die(${0:});
 endsnippet
-snippet pr
-	print_r(${0});
+snippet btr
+	var_dump(debug_backtrace());
 endsnippet
-snippet prs
-	print_r(${0}, 1);
+
+# methods
+snippet pub "Public function" b
+/**
+ * ${3:undocumented function}
+ *
+ * @return ${4:void}
+ */
+public function ${1:name}(${2:$param})
+{
+	${VISUAL}${5:return null;}
+}
+$0
 endsnippet
-snippet vdf
-	error_log(print_r($${1:foo}, true), 3, '${2:/tmp/debug.log}');
+
+snippet pri "Private function" b
+/**
+ * ${3:undocumented function}
+ *
+ * @return ${4:void}
+ */
+private function ${1:name}(${2:$param})
+{
+	${VISUAL}${5:return null;}
+}
+$0
 endsnippet
