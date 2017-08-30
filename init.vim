@@ -9,6 +9,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'Shougo/deoplete.nvim' 
 Plug 'SirVer/ultisnips' 
+Plug 'mileszs/ack.vim'
 "Plug 'honza/vim-snippets' 
 " Initialize plugin system
 call plug#end()
@@ -246,7 +247,9 @@ let g:airline#extensions#whitespace#enabled        = 1
 let g:ctrlp_working_path_mode = 'c'
 
 " Ag setting
-let g:ackprg = 'ag --nogroup --nocolor --column'
+if executable('ag')
+  let g:ackprg = 'ag --nogroup --nocolor --column'
+endif
 
 " Use deoplete.
 let g:deoplete#enable_at_startup = 1
