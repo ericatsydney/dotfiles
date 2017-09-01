@@ -1,0 +1,25 @@
+# Debugging.
+snippet clg
+console.log(${0});
+endsnippet
+
+
+# Namespace
+snippet nsp
+(function ($, window, document, undefined){
+  'use strict';
+
+  var DD = window.DD || {};
+
+  DD.${1:SUBDOMAIN} = {
+	  config: {
+		  $2
+		},
+		init: function() {
+		  $3
+		}
+		$0
+	};
+})(jQuery, this, this.document);
+endsnippet
+

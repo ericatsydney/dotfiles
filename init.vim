@@ -38,6 +38,7 @@ map <leader>d <Esc>:bd<CR>
 
 " Create shortcut to edit vimrc.
 nmap <leader>ev :e $MYVIMRC<cr>
+nmap <leader>ea :e ~/.bash_aliases<cr>
 
 " Syntax check.
 nmap <leader>sc :SyntasticCheck<cr>
@@ -257,8 +258,8 @@ let g:deoplete#enable_at_startup = 1
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
 set runtimepath+=~/.config/nvim/mySnippets
 let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+let g:UltiSnipsJumpForwardTrigger="<c-j>"
+let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 
 let g:UltiSnipsSnippetsDir="~/.config/nvim/mySnippets"
 let g:UltiSnipsSnippetDirectories="~/.config/nvim/mySnippets"
