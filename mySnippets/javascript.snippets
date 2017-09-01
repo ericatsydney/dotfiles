@@ -15,10 +15,9 @@ snippet nsp
 	  config: {
 		  $2
 		},
-		init: function() {
-		  $3
+		$3: function() {
+		  $0
 		}
-		$0
 	};
 })(jQuery, this, this.document);
 endsnippet
