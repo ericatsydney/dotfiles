@@ -1,0 +1,13 @@
+env:
+  browser: true
+rules:
+  quotes:
+    - 2
+    - "single"
+  semi:
+    - 2
+    - "always"
+  strict: 2
+  indent:
+    - 2
+    - 2

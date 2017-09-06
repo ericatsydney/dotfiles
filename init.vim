@@ -202,14 +202,14 @@ let g:syntastic_check_on_open            = 1
 let g:syntastic_check_on_wq              = 0
 " let g:syntastic_css_checkers             = ['csslint']
 let g:syntastic_javascript_checkers = ['eslint']
-let g:syntastic_javascript_eslint_args   = ['--config', '/Users/yanhu/Code/fcl-account-api-gateway/.eslintrc']
+let g:syntastic_javascript_eslint_args   = ['--config', '/Users/erictan/.eslintrc']
 let g:syntastic_html_checkers            = [] " Disable HTML checkers.
 "let g:syntastic_javascript_checkers      = ['jshint']
 let g:syntastic_javascript_jshint_args   = ['--config', '/home/vagrant/.jshintrc']
 let g:syntastic_sh_checkers              = ['sh', 'shellcheck']
 let g:syntastic_sh_shellcheck_args       = '--exclude=SC2155,SC2032,SC1090,SC2033' " Ignore declare and assign on same line.
 let g:syntastic_php_checkers             = ['php', 'phpcs']
-let g:syntastic_php_phpcs_args           = ['--standard=/home/vagrant/phpcs.xml']
+let g:syntastic_php_phpcs_args           = ['--standard=/Users/erictan/phpcs.xml']
 let g:syntastic_python_checkers          = ['pylint', 'pep8', 'python']
 let g:syntastic_scss_checkers            = ['scss_lint']
 let g:syntastic_text_checkers            = ['proselint']
@@ -220,6 +220,8 @@ let g:syntastic_stl_format               = '[%E{E: %fe #%e}%B{, }%W{W: %fw #%w}]
 let g:syntastic_cucumber_checkers        = ['cucumber']
 let g:syntastic_cucumber_cucumber_args   = '--profile syntastic'
 " let g:syntastic_cucumber_cucumber_exe    = '/usr/local/bin/gherkin-lint'
+" syntastic debug setting.
+"let g:syntastic_debug   = 3
 
 " Airline
  let g:airline_theme = 'luna'
