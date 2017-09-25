@@ -10,6 +10,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'Shougo/deoplete.nvim' 
 Plug 'SirVer/ultisnips' 
 Plug 'mileszs/ack.vim'
+Plug 'tpope/vim-commentary'
 "Plug 'honza/vim-snippets' 
 " Initialize plugin system
 call plug#end()
@@ -265,3 +266,8 @@ let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 
 let g:UltiSnipsSnippetsDir="~/.config/nvim/mySnippets"
 let g:UltiSnipsSnippetDirectories="~/.config/nvim/mySnippets"
+
+" vim-commentary.
+autocmd FileType php setlocal commentstring=//\ %s
+autocmd FileType css.scss setlocal commentstring=//\ %s
+autocmd FileType apache setlocal commentstring=#\ %s

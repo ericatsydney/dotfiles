@@ -1,13 +1,13 @@
 # Debugging.
 snippet vd
-	var_dump(${0});
+var_dump(${0});
 endsnippet
 snippet vdd
-	var_dump(${1}); 
-	die(${0:});
+var_dump(${1}); 
+die(${0:});
 endsnippet
 snippet btr
-	var_dump(debug_backtrace());
+var_dump(debug_backtrace());
 endsnippet
 
 # methods
@@ -17,8 +17,7 @@ snippet pub "Public function" b
  *
  * @return ${4:void}
  */
-public function ${1:name}(${2:$param})
-{
+public function ${1:name}(${2:$param}) {
 	${VISUAL}${5:return null;}
 }
 $0
@@ -30,8 +29,7 @@ snippet pri "Private function" b
  *
  * @return ${4:void}
  */
-private function ${1:name}(${2:$param})
-{
+private function ${1:name}(${2:$param}) {
 	${VISUAL}${5:return null;}
 }
 $0
