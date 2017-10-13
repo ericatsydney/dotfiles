@@ -23,6 +23,18 @@ public function ${1:name}(${2:$param}) {
 $0
 endsnippet
 
+snippet pro "Protected function" b
+/**
+ * ${3:undocumented function}
+ *
+ * @return ${4:void}
+ */
+protected function ${1:name}(${2:$param}) {
+	${VISUAL}${5:return null;}
+}
+$0
+endsnippet
+
 snippet pri "Private function" b
 /**
  * ${3:undocumented function}

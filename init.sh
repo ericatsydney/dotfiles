@@ -18,3 +18,13 @@ do
     echo 'file exists, skip.....'
   fi
 done
+
+#Setup the dotfile in home directory
+if [ ! -f ~/.functions ]; then
+    ln -s $git_path/.functions ~/.functions
+    echo '>>>>>>>>'
+    echo 'Link file to the source.'
+else
+    echo '>>>>>>>>'
+    echo 'file exists, skip.....'
+fi

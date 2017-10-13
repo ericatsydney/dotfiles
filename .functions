@@ -1,0 +1,7 @@
+ff() {
+  find . -type f -name $1
+}
+
+fd() {
+  find . -type d -name $1
+}
