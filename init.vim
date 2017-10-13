@@ -36,6 +36,7 @@ map <leader>w <Esc>:w<CR>
 inoremap <leader>w <Esc>:w<CR>
 map <leader>q <Esc>:q<CR>
 map <leader>d <Esc>:bd<CR>
+map <leader>rz <Esc>:vertical resize 50<CR>
 
 " Create shortcut to edit vimrc.
 nmap <leader>ev :e $MYVIMRC<cr>
@@ -159,7 +160,7 @@ let NERDTreeShowHidden=1
 let NERDTreeIgnore = ['\.pyc$','\.git$','\.svn$']
 
 " map ii to escape key when in insert mode
-imap ii <Esc>
+" imap ii <Esc>
 
 
 " powerline setup

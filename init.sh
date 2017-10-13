@@ -28,3 +28,12 @@ else
     echo '>>>>>>>>'
     echo 'file exists, skip.....'
 fi
+
+if [ ! -f $vim_config_path/init.vim ]; then
+    ln -s $git_path/init.vim $vim_config_path/init.vim
+    echo '>>>>>>>>'
+    echo 'Link file to the source.'
+else
+    echo '>>>>>>>>'
+    echo 'file exists, skip.....'
+fi
