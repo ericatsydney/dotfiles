@@ -30,7 +30,22 @@ else
 fi
 
 if [ ! -f $vim_config_path/init.vim ]; then
-    ln -s $git_path/init.vim $vim_config_path/init.vim
+    ln -s $git_path/.config/nvim/init.vim $vim_config_path/init.vim
+    echo '>>>>>>>>'
+    echo 'Link file to the source.'
+else
+    echo '>>>>>>>>'
+    echo 'file exists, skip.....'
+fi
+
+if [ ! -d $vim_config_path/after/ftplugin ]; then
+    mkdir -p $vim_config_path/after/ftplugin
+    echo '>>>>>>>>'
+    echo 'Create folder.'
+fi
+
+if [ ! -f $vim_config_path/after/ftplugin/php.vim ]; then
+    ln -s $git_path/after/ftplugin/php.vim $vim_config_path/after/ftplugin/php.vim
     echo '>>>>>>>>'
     echo 'Link file to the source.'
 else
